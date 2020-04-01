@@ -1,0 +1,6 @@
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\obj\Debug\Strategy.csprojAssemblyReference.cache
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\bin\Debug\Strategy.exe.config
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\bin\Debug\Strategy.exe
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\bin\Debug\Strategy.pdb
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\obj\Debug\Strategy.exe
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\obj\Debug\Strategy.pdb

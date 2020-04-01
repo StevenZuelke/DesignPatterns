@@ -1,0 +1,5 @@
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\bin\Release\Strategy.exe.config
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\bin\Release\Strategy.exe
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\bin\Release\Strategy.pdb
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\obj\Release\Strategy.exe
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Strategy\Strategy\obj\Release\Strategy.pdb
