@@ -15,5 +15,15 @@ namespace Strategy
         {
             return "Slash";
         }
+
+        public void performSolo()
+        {
+            Solo.perform();
+        }
+
+        public void playGuitar()
+        {
+            Guitar.play();
+        }
     }
 }

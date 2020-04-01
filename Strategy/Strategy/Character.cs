@@ -11,6 +11,9 @@ namespace Strategy
         Guitar Guitar { get; set; }
         Solo Solo { get; set; }
 
+        void playGuitar();
+
+        void performSolo();
         string getName();
     }
 }

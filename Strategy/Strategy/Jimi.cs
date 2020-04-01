@@ -15,5 +15,15 @@ namespace Strategy
         {
             return "Jimi Hendrix";
         }
+
+        public void performSolo()
+        {
+            Solo.perform();
+        }
+
+        public void playGuitar()
+        {
+            Guitar.play();
+        }
     }
 }

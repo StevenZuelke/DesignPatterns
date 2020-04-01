@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    interface Guitar
+    class Smash : Solo
     {
-        void play();
+        
+        public void perform()
+        {
+            Console.WriteLine("Smashes the Guitar");
+        }
     }
 }

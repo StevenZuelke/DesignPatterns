@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    interface Guitar
+    class Fender : Guitar
     {
-        void play();
+    
+        public void play()
+        {
+            Console.WriteLine("Fender Telecaster");
+        }
     }
 }

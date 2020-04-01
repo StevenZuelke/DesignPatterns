@@ -8,6 +8,6 @@ namespace Strategy
 {
     interface Solo
     {
-        string getName();
+        void perform();
     }
 }

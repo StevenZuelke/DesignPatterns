@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    interface Guitar
+    class SG : Guitar
     {
-        void play();
+        
+        public void play()
+        {
+            Console.WriteLine("Gibson SG");
+        }
     }
 }

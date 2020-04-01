@@ -36,6 +36,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Smash.cs" />
+    <Compile Include="Jump.cs" />
+    <Compile Include="Fire.cs" />
+    <Compile Include="SG.cs" />
+    <Compile Include="Fender.cs" />
+    <Compile Include="FlyingV.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="Jimi.cs" />
     <Compile Include="Angus.cs" />
