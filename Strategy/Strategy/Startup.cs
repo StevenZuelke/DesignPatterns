@@ -12,10 +12,10 @@ namespace Strategy
         {
             Character player1 = new Slash();
             Character player2 = new Jimi();
-            player1.Guitar = new SG();
-            player2.Guitar = new FlyingV();
-            player1.Solo = new Smash();
-            player2.Solo = new Jump();
+            player1.setGuitar("SG");
+            player2.setGuitar("FlyingV");
+            player1.setSolo("Smash");
+            player2.setSolo("Jump");
             Console.WriteLine("Player 1: " + player1.getName());
             player1.playGuitar();
             player1.performSolo();
@@ -26,11 +26,11 @@ namespace Strategy
             Console.WriteLine("START SWITCHING");
             //Switch once
             player1 = new Jimi();
-            player1.Guitar = new Fender();
-            player1.Solo = new Fire();
+            player1.setGuitar("Fender");
+            player1.setSolo("Jump");
             player2 = new Angus();
-            player2.Guitar = new SG();
-            player2.Solo = new Smash();
+            player2.setGuitar("SG");
+            player2.setSolo("Smash");
             Console.WriteLine("Player 1: "+ player1.getName());
             player1.playGuitar();
             player1.performSolo();
@@ -41,11 +41,11 @@ namespace Strategy
             Console.WriteLine("Switching again");
             //Switch again
             player1 = new Angus();
-            player1.Guitar = new FlyingV();
-            player1.Solo = new Jump();
+            player1.setGuitar("FlyingV");
+            player1.setSolo("Jump");
             player2 = new Slash();
-            player2.Guitar = new Fender();
-            player2.Solo = new Fire();
+            player2.setGuitar("Fender");
+            player2.setSolo("Fire");
             Console.WriteLine("Player 1: " + player1.getName());
             player1.playGuitar();
             player1.performSolo();
