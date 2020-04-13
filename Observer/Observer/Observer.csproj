@@ -37,10 +37,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventSource.cs" />
-    <Compile Include="ConcreteObserver.cs" />
-    <Compile Include="IObserver.cs" />
-    <Compile Include="ISubject.cs" />
+    <Compile Include="BadGuy.cs" />
+    <Compile Include="Dwarf.cs" />
+    <Compile Include="Man.cs" />
+    <Compile Include="Hobbit.cs" />
+    <Compile Include="Elf.cs" />
+    <Compile Include="EyeOfSauron.cs" />
+    <Compile Include="GoodGuy.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
