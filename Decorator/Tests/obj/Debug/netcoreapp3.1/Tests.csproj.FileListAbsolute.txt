@@ -1,0 +1,4 @@
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Decorator\Tests\obj\Debug\netcoreapp3.1\Tests.csprojAssemblyReference.cache
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Decorator\Tests\obj\Debug\netcoreapp3.1\Tests.csproj.CoreCompileInputs.cache
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Decorator\Tests\obj\Debug\netcoreapp3.1\Tests.AssemblyInfoInputs.cache
+C:\Users\StevenZuelke\Desktop\Computer Science\349DesignPatterns\GitRepo\DesignPatterns\Decorator\Tests\obj\Debug\netcoreapp3.1\Tests.AssemblyInfo.cs

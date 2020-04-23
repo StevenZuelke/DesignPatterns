@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator
+namespace Decorator.trees
 {
-    public class Startup
+    public class Fraser : Tree
     {
-        public static void Main(string[] args)
+        public Fraser()
         {
-
+            this.Description = "Fraser Fir";
+            this.Cost = 35;
         }
     }
 }
