@@ -18,7 +18,7 @@ namespace Decorator.decorators
                 Console.WriteLine("Tree already has a star.");
                 this.Description = tree.GetDescription();
                 this.Cost = tree.GetCost();
-
+                this.Star = true;
             }
             else
             {

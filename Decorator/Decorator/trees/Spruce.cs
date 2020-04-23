@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Decorator.trees
 {
-    public class Fraser : Tree
+    public class Spruce : Tree
     {
-        public Fraser()
+        public Spruce()
         {
-            this.Description = "Fraser Fir";
-            this.Cost = 35;
+            this.Description = "Colorado Blue Spruce";
+            this.Cost = 50;
             this.Star = false;
         }
     }

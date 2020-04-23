@@ -36,10 +36,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="decorators\Silver.cs" />
+    <Compile Include="decorators\Blue.cs" />
+    <Compile Include="decorators\Ribbons.cs" />
+    <Compile Include="decorators\Lights.cs" />
+    <Compile Include="decorators\LEDs.cs" />
+    <Compile Include="decorators\Red.cs" />
+    <Compile Include="decorators\Ruffles.cs" />
     <Compile Include="Tree.cs" />
     <Compile Include="Decorator.cs" />
     <Compile Include="decorators\Star.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="trees\Balsam.cs" />
+    <Compile Include="trees\Spruce.cs" />
+    <Compile Include="trees\Douglas.cs" />
     <Compile Include="trees\Fraser.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
