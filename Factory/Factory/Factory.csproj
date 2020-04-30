@@ -36,9 +36,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConcreteProduct.cs" />
-    <Compile Include="Factory.cs" />
-    <Compile Include="IProduct.cs" />
+    <Compile Include="shapes\Square.cs" />
+    <Compile Include="shapes\Rectangle.cs" />
+    <Compile Include="shapes\Triangle.cs" />
+    <Compile Include="shapes\Circle.cs" />
+    <Compile Include="shapes\ShapeFactory.cs" />
+    <Compile Include="shapes\Shape.cs" />
+    <Compile Include="ShapeTester.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
