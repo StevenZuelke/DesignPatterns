@@ -10,6 +10,7 @@ namespace Factory.shapes
     {
         public Shape Create(string shape, double width, double height)
         {
+
             Shape concreteShape = new Circle(0, 0);
             if (shape.ToLower() == "circle")
             {//Circle
