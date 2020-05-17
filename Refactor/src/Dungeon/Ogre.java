@@ -12,9 +12,9 @@ package Dungeon;
 public class Ogre extends Monster
 {
 
-    public Ogre()
+    public Ogre(Attack specialAttack)
 	{
-		super("Oscar the Dungeon", 200, 2, .6, .1, 30, 50, 30, 50);
+		super("Oscar the Dungeon", 200, 2, .6, .1, 30, 50, 30, 50, specialAttack);
 
 
     }//end constructor

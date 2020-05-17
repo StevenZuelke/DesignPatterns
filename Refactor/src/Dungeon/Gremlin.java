@@ -12,9 +12,9 @@ package Dungeon;
 public class Gremlin extends Monster
 {
 
-    public Gremlin()
+    public Gremlin(Attack specialAttack)
 	{
-		super("Gnarltooth the Gremlin", 70, 5, .8, .4, 15, 30, 20, 40);
+		super("Gnarltooth the Gremlin", 70, 5, .8, .4, 15, 30, 20, 40, specialAttack);
 
     }//end constructor
 

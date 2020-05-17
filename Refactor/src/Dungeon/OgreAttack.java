@@ -1,7 +1,11 @@
 package Dungeon;
 
 public class OgreAttack implements Attack {
-    public String toString(){
-        return " slowly swings a club towards ";
+    public String name(){
+        return "";
+    }
+
+    public void attack(DungeonCharacter attacker, DungeonCharacter opponent){
+
     }
 }

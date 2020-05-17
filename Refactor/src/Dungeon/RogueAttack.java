@@ -1,6 +1,7 @@
 package Dungeon;
 
-public class GremlinAttack implements Attack {
+public class RogueAttack implements Attack {
+
     public String name(){
         return "";
     }
@@ -8,4 +9,5 @@ public class GremlinAttack implements Attack {
     public void attack(DungeonCharacter attacker, DungeonCharacter opponent){
 
     }
+
 }

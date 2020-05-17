@@ -12,13 +12,13 @@ package Dungeon;
 
 
 
-public class Warrior extends Hero
+public class Rogue extends Hero
 {
 
-    public Warrior(Attack specialAttack)
+    public Rogue(Attack specialAttack)
 	{
 
-		super("Warrior", 125, 4, .8, 35, 60, .2, specialAttack);
+		super("Rogue", 100, 5, .8, 20, 60, .3, specialAttack);
 
 
     }//end constructor
@@ -27,9 +27,12 @@ public class Warrior extends Hero
 
 	public void attack(DungeonCharacter opponent)
 	{
-		System.out.println(name + " swings a mighty sword at " +
+		System.out.println(name + " uses guerrilla warfare against " +
 							opponent.getName() + ":");
 		super.attack(opponent);
 	}//end override of attack method
+
+
+
 
 }//end Hero class

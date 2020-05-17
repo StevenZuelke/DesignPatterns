@@ -43,9 +43,9 @@ public abstract class Hero extends DungeonCharacter
 //calls base constructor and gets name of hero from user
   public Hero(String name, int hitPoints, int attackSpeed,
 				     double chanceToHit, int damageMin, int damageMax,
-					 double chanceToBlock)
+					 double chanceToBlock, Attack specialAttack)
   {
-	super(name, hitPoints, attackSpeed, chanceToHit, damageMin, damageMax);
+	super(name, hitPoints, attackSpeed, chanceToHit, damageMin, damageMax, specialAttack);
 	this.chanceToBlock = chanceToBlock;
 	this.numHealingPots = 0;
 	this.numVisionPots = 0;
@@ -143,6 +143,31 @@ This method is called by: external sources
 			numTurns++;
 
 		System.out.println("Number of turns this round is: " + numTurns);
+
+		int choice;
+
+		do
+		{
+			System.out.println("1. Attack Opponent");
+			System.out.println("2. " + specialAttack.name());
+			System.out.print("Choose an option: ");
+			choice = Keyboard.readInt();
+
+			switch (choice)
+			{
+				case 1: attack(opponent);
+					break;
+				case 2: specialAttack(opponent);
+					break;
+				default:
+					System.out.println("invalid choice!");
+			}//end switch
+
+			numTurns--;
+			if (numTurns > 0)
+				System.out.println("Number of turns remaining is: " + numTurns);
+
+		} while(numTurns > 0);
 
 	}//end battleChoices
 

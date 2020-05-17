@@ -1,5 +1,6 @@
 package Dungeon;
 
 public interface Attack {
-    String toString();
+    String name();
+    void attack(DungeonCharacter attacker, DungeonCharacter opponent);
 }

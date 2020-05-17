@@ -12,9 +12,9 @@ package Dungeon;
 public class Skeleton extends Monster
 {
 
-    public Skeleton()
+    public Skeleton(Attack specialAttack)
 	{
-		super("Sargath the Skeleton", 100, 3, .8, .3, 30, 50, 30, 50);
+		super("Sargath the Skeleton", 100, 3, .8, .3, 30, 50, 30, 50, specialAttack);
 
     }//end constructor
 

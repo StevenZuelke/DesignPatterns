@@ -1,7 +1,11 @@
 package Dungeon;
 
 public class SkeletonAttack implements Attack {
-    public String toString(){
-        return " slices his rusty blade at ";
+    public String name(){
+        return "";
+    }
+
+    public void attack(DungeonCharacter attacker, DungeonCharacter opponent){
+
     }
 }
