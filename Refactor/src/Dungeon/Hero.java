@@ -1,5 +1,7 @@
 package Dungeon;
 
+import javafx.geometry.Point2D;
+
 /**
  * Title: Dungeon.Hero.java
  *
@@ -32,6 +34,10 @@ public abstract class Hero extends DungeonCharacter
 {
 	protected double chanceToBlock;
 	protected int numTurns;
+	protected int numHealingPots;
+	protected int numVisionPots;
+	protected int numPillars;
+	protected Point2D location;
 
 //-----------------------------------------------------------------
 //calls base constructor and gets name of hero from user
@@ -41,8 +47,25 @@ public abstract class Hero extends DungeonCharacter
   {
 	super(name, hitPoints, attackSpeed, chanceToHit, damageMin, damageMax);
 	this.chanceToBlock = chanceToBlock;
+	this.numHealingPots = 0;
+	this.numVisionPots = 0;
+	this.numPillars = 0;
+	this.location = new Point2D(0,0);
 	readName();
   }
+
+  //toString method that returns everything in project specs
+	public String toString(){
+
+  	String string = "";
+  	string += this.name + ":\n";
+  	string += "HP: " + this.hitPoints + "\n";
+  	string += "Healing Potions: " + this.numHealingPots + "\n";
+  	string += "Vision Potions: " + this.numVisionPots + "\n";
+  	string += "Pillars of OO found: " + this.numPillars;
+  	return string;
+
+	}
 
 /*-------------------------------------------------------
 readName obtains a name for the hero from the user
