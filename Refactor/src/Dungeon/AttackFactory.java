@@ -17,7 +17,7 @@ public class AttackFactory {
     }
 
     public Attack getAttack(String characterType){
-        return Attacks.get(characterType);
+        return Attacks.get(characterType.toLowerCase());
     }
 
 }
