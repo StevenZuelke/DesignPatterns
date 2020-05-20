@@ -67,6 +67,14 @@ public abstract class Hero extends DungeonCharacter
 
 	}
 
+	//Override for attack to call battlechoices
+	public void attack(DungeonCharacter opponent){
+
+		battleChoices(opponent);
+
+	}//end attack
+
+
 /*-------------------------------------------------------
 readName obtains a name for the hero from the user
 
