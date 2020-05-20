@@ -74,6 +74,13 @@ public abstract class Hero extends DungeonCharacter
 
 	}//end attack
 
+	//Override for attack to call super.attack
+	public void attack(DungeonCharacter opponent, boolean superCall){
+
+		super.attack(opponent);
+
+	}//end attack
+
 
 /*-------------------------------------------------------
 readName obtains a name for the hero from the user

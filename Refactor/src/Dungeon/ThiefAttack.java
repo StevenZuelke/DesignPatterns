@@ -9,12 +9,14 @@ public class ThiefAttack implements Attack {
     public void attack(DungeonCharacter attacker, DungeonCharacter opponent) {
 
         double surprise = Math.random();
+        Hero hero = (Hero) attacker;
+
         if (surprise <= .4) {
 
             System.out.println("Surprise attack was successful!\n" +
                     attacker.name + " gets an additional turn.");
-            attacker.attack(opponent);
-            attacker.attack(opponent);
+            hero.attack(opponent, true);
+            hero.attack(opponent, true);
 
         }//end surprise
 
@@ -26,7 +28,7 @@ public class ThiefAttack implements Attack {
         }//end else if
 
         else
-            attacker.attack(opponent);
+            hero.attack(opponent, true);
         //end else
 
     }//end surpriseAttack method

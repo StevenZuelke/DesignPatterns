@@ -18,7 +18,7 @@ public class Barbarian extends Hero
 	{
 		System.out.println(name + " spins at high speeds twirling his axe " +
 							opponent.getName() + ":");
-		super.attack(opponent);
+		super.attack(opponent, true);
 	}//end attack
 
 }//end class

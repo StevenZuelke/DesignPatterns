@@ -29,7 +29,7 @@ public class Warrior extends Hero
 	{
 		System.out.println(name + " swings a mighty sword at " +
 							opponent.getName() + ":");
-		super.attack(opponent);
+		super.attack(opponent, true);
 	}//end override of attack method
 
 }//end Hero class

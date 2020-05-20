@@ -47,6 +47,7 @@ public abstract class Monster extends DungeonCharacter
 //-----------------------------------------------------------------
   public void heal()
   {
+  	
 	boolean canHeal;
 	int healPoints;
 
