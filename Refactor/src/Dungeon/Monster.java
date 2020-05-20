@@ -37,7 +37,7 @@ public abstract class Monster extends DungeonCharacter
 			this.specialAttack(opponent);
 
 		}else{
-			
+
 			super.attack(opponent);
 
 		}//end if else

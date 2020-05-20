@@ -1,7 +1,7 @@
 package Dungeon;
 
-public class DragonAttack
-{
+public class DragonAttack implements Attack {
+
 	public String name()
     {
         return "Breathe Fire";

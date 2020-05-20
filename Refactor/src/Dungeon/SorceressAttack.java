@@ -5,10 +5,9 @@ public class SorceressAttack implements Attack {
         return "Increase Hit Points";
     }
 
-    public void attack(DungeonCharacter attacker, DungeonCharacter opponent)
-    {
-        int hPoints;
+    public void attack(DungeonCharacter attacker, DungeonCharacter opponent) {
 
+        int hPoints;
         hPoints = (int)(Math.random() * (50 - 25 + 1)) + 25;
         attacker.addHitPoints(hPoints);
         System.out.println(attacker.name + " added [" + hPoints + "] points.\n"
@@ -17,4 +16,5 @@ public class SorceressAttack implements Attack {
         System.out.println();
 
     }//end increaseHitPoints method
-}
+
+}//end class
