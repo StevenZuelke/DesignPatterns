@@ -27,8 +27,7 @@ public class Rogue extends Hero
 
 	public void attack(DungeonCharacter opponent)
 	{
-		System.out.println(name + " uses guerrilla warfare against " +
-							opponent.getName() + ":");
+		System.out.println(name + " uses guerrilla warfare against " + opponent.getName() + ":");
 		super.attack(opponent);
 	}//end override of attack method
 

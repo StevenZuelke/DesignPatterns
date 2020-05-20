@@ -27,8 +27,7 @@ public class Sorceress extends Hero
 //-----------------------------------------------------------------
 	public void attack(DungeonCharacter opponent)
 	{
-		System.out.println(name + " casts a spell of fireball at " +
-							opponent.getName() + ":");
+		System.out.println(name + " casts a spell of fireball at " + opponent.getName() + ":");
 		super.attack(opponent);
 	}//end override of attack method
 

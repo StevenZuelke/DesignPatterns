@@ -21,8 +21,7 @@ public class Thief extends Hero
 
 	public void attack(DungeonCharacter opponent)
 	{
-		System.out.println(name + " attacks " +
-				opponent.getName() + ":");
+		System.out.println(name + " attacks " + opponent.getName() + ":");
 		super.attack(opponent);
 	}//end override of attack method
 

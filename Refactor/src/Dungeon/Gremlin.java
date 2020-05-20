@@ -14,14 +14,13 @@ public class Gremlin extends Monster
 
     public Gremlin(Attack specialAttack)
 	{
-		super("Gnarltooth the Gremlin", 70, 5, .8, .4, 15, 30, 20, 40, specialAttack);
+		super("Gnarltooth the Gremlin", 70, 5, .8, .4, 20, 40, 20, 40, specialAttack);
 
     }//end constructor
 
 	public void attack(DungeonCharacter opponent)
 	{
-		System.out.println(name + " jabs his kris at " +
-							opponent.getName() + ":");
+		System.out.println(name + " jabs his kris at " + opponent.getName() + ":");
 		super.attack(opponent);
 
 	}//end override of attack
