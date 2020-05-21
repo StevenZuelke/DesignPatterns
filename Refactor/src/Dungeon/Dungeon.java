@@ -249,9 +249,7 @@ user has the option of quitting.
 				  }
 				}
 			}	
-		}
-		
-		
+		}	
 		this.finalRoom = dungeonRooms;
 		return dungeonRooms;
 	}
