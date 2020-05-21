@@ -21,6 +21,7 @@ public class Room {
     }//end constructor
 
     public void addItem(int itemNum){ itemsContained.add(itemNum); }
+ 
 
     public void clearItems(){ itemsContained = new ArrayList<Integer>(); }
 

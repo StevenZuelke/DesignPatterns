@@ -47,6 +47,7 @@ package Dungeon;
 */
 public class Dungeon
 {
+	/*added
     public static void main(String[] args)
 	{
 
@@ -68,6 +69,7 @@ chooseHero allows the user to select a hero, creates that hero, and
 returns it.  It utilizes a polymorphic reference (Hero) to accomplish
 this task
 ---------------------------------------------------------------------*/
+	/* added
 	public static Hero chooseHero()
 	{
 		int choice;
@@ -92,7 +94,7 @@ this task
 				     return new Thief();
 		}//end switch
 
-		 */
+		 
 		return null;
 	}//end chooseHero method
 
@@ -100,6 +102,7 @@ this task
 generateMonster randomly selects a Monster and returns it.  It utilizes
 a polymorphic reference (Monster) to accomplish this task.
 ---------------------------------------------------------------------*/
+/* added
 	public static Monster generateMonster()
 	{
 		int choice;
@@ -118,14 +121,15 @@ a polymorphic reference (Monster) to accomplish this task.
 			default: System.out.println("invalid choice, returning Skeleton");
 				     return new Skeleton();
 		}//end switch
-		 */
+		 
 		return null;
-	}//end generateMonster method
+	}//end generateMonster method*/
 
 /*-------------------------------------------------------------------
 playAgain allows gets choice from user to play another game.  It returns
 true if the user chooses to continue, false otherwise.
 ---------------------------------------------------------------------*/
+	/* added
 	public static boolean playAgain()
 	{
 		char again;
@@ -142,6 +146,7 @@ and a Monster to be passed in.  Battle occurs in rounds.  The Hero
 goes first, then the Monster.  At the conclusion of each round, the
 user has the option of quitting.
 ---------------------------------------------------------------------*/
+	/* added
 	public static void battle(Hero theHero, Monster theMonster)
 	{
 		char pause = 'p';
@@ -173,6 +178,102 @@ user has the option of quitting.
 			System.out.println("Quitters never win ;-)");
 
 	}//end battle method
-
-
+*/
+	Hero theHero;
+	private String finalRoom[][];
+	
+	public String[][] makeRooms()
+	{
+		String roomSize[][] = new String[5][5];
+		return roomSize;
+			
+	}
+	/*      c0 c1 c2 c3 c4
+	 * [enter] [] [] [] [] //r0
+	 *      [] [] [] [] [] //r1
+	 *      [] [] [] [] [] //r2
+	 *      [] [] [] [] [] //r3
+	 *      [] [] [] [] [exit] //r4
+	 */
+	public String[][] roomSetup()//adding entrance,exit and 4 pillars
+	{
+		Room objectList = new Room();
+		
+		String[][] dungeonRooms = makeRooms(); // empty 2D 5x5 to add items
+		int totalPillars = 0;
+		
+		dungeonRooms[0][0] = "Entrance";
+		objectList.addItem(0);
+		
+		dungeonRooms[4][4] = "Exit";
+		objectList.addItem(1);
+		
+		while(totalPillars < 4)
+		{
+			int row = (int)(Math.random()*4)+0;
+			int col = (int)(Math.random()*4)+0;
+			if(row != 0 && col != 0 || dungeonRooms[row][col].isEmpty())
+			{
+			dungeonRooms[row][col] = "Pillar";
+			objectList.addItem(6);
+			totalPillars++;
+			}
+		}
+		
+		
+		for(int rows = 0; rows < dungeonRooms.length;rows++)
+		{
+			for(int columns = 0; columns < dungeonRooms[columns].length; columns++)
+			{
+				if(rows != 0 && columns != 0 || dungeonRooms[rows][columns].isEmpty())
+				{	
+				  int num = (int)(Math.random()*5)+2;
+				  if(num == 2) {
+					  dungeonRooms[rows][columns] = "HP";
+					  objectList.addItem(num);
+				  }
+				  
+				  if(num == 3){
+					  dungeonRooms[rows][columns] = "VP";
+					  objectList.addItem(num);
+				  }
+				  
+				  if(num == 4){
+					  dungeonRooms[rows][columns] = "Pit";
+					  objectList.addItem(num);
+				  }
+				  
+				  if(num == 5){
+					  dungeonRooms[rows][columns] = "Monster";
+					  objectList.addItem(num);
+				  }
+				}
+			}	
+		}
+		
+		
+		this.finalRoom = dungeonRooms;
+		return dungeonRooms;
+	}
+	
+	public String heroLocation()//maintains location of hero in dungeon
+	{
+		return "The hero is located in " + theHero.location;
+	}
+	
+	public String toString()//dungeon information
+	{
+		String message = "Here is the information about the entire dungeon: ";
+		for(int rows = 0; rows < this.finalRoom.length;rows++)
+		{
+			for(int columns = 0; columns < this.finalRoom[columns].length; columns++)
+			{
+				message += finalRoom[rows][columns];
+				//column reaches 5 then new line?
+			}
+		}
+		
+		return message;
+	}
+ 	
 }//end Dungeon class
