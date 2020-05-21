@@ -23,7 +23,7 @@ public class Thief extends Hero
 	{
 		System.out.println(name + " attacks " +
 				opponent.getName() + ":");
-		super.attack(opponent);
+		super.attack(opponent, true);
 	}//end override of attack method
 
 }

@@ -28,9 +28,26 @@ public abstract class Monster extends DungeonCharacter
 
   }//end monster construcotr
 
+	//Override attack to possible special Attack
+
+	public void attack(DungeonCharacter opponent){
+
+		if(Math.random() <= .2){
+
+			this.specialAttack(opponent);
+
+		}else{
+
+			super.attack(opponent);
+
+		}//end if else
+
+	}//end attack
+
 //-----------------------------------------------------------------
   public void heal()
   {
+  	
 	boolean canHeal;
 	int healPoints;
 

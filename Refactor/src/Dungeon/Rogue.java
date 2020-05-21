@@ -29,7 +29,7 @@ public class Rogue extends Hero
 	{
 		System.out.println(name + " uses guerrilla warfare against " +
 							opponent.getName() + ":");
-		super.attack(opponent);
+		super.attack(opponent, true);
 	}//end override of attack method
 
 

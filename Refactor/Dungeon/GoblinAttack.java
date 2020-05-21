@@ -2,12 +2,12 @@
 public class GoblinAttack 
 {
 	 public String name(){
-	        return "Steal your Hit Points";
+	        return "Steal Hit Points";
 	    }
 
 	    public void attack(DungeonCharacter attacker, DungeonCharacter opponent)
 	    {
-	        double steal = Math.random();
+	        int steal = Math.random();
 	        
 	        int hPoints;
 
@@ -16,15 +16,18 @@ public class GoblinAttack
 	        
 	        if (steal <= .4)
 	        {
-	            System.out.println( attacker.name + " steals " + hPoints " hitpoints from " + opponent.getName()
-	            + "Which brings the total hitpoints to " + attacker.hitPoints);
+	        	
 	            attacker.addHitPoints(hPoints);
-	            opponent.subtractHitPoints(h{oints);
+	            opponent.subtractHitPoints(hPoints);
+	            
+	            System.out.println( attacker.name + " sneaks behind and steals " + hPoints " hitpoints from " + opponent.getName()
+	            	+ "Which brings its total hitpoints to " + attacker.hitPoints);
+	        }
 	         
-	        }//end surprise
+	        }
 	        else if (steal >= .8)
 	        {
-	            System.out.println("Uh oh! " + opponent.getName() + " caught you in the act" +
+	            System.out.println("Uh oh! " + opponent.getName() + " saw you from a mile away and" +
 	                    " stopped you from stealing!");
 	        }
 	        else

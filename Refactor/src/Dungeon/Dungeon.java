@@ -79,6 +79,7 @@ this task
 						   "3. Thief");
 		choice = Keyboard.readInt();
 
+		/*
 		switch(choice)
 		{
 			case 1: return new Warrior();
@@ -90,6 +91,9 @@ this task
 			default: System.out.println("invalid choice, returning Thief");
 				     return new Thief();
 		}//end switch
+
+		 */
+		return null;
 	}//end chooseHero method
 
 /*-------------------------------------------------------------------
@@ -102,6 +106,7 @@ a polymorphic reference (Monster) to accomplish this task.
 
 		choice = (int)(Math.random() * 3) + 1;
 
+		/*
 		switch(choice)
 		{
 			case 1: return new Ogre();
@@ -113,6 +118,8 @@ a polymorphic reference (Monster) to accomplish this task.
 			default: System.out.println("invalid choice, returning Skeleton");
 				     return new Skeleton();
 		}//end switch
+		 */
+		return null;
 	}//end generateMonster method
 
 /*-------------------------------------------------------------------
