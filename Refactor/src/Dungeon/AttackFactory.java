@@ -7,6 +7,10 @@ public class AttackFactory {
 
      Map<String, Attack> Attacks = new HashMap<String, Attack>();
 
+     public AttackFactory(){
+         fillMap();
+     }
+
     public void fillMap(){
 
         Attacks.put("gremlin", new GremlinAttack());
