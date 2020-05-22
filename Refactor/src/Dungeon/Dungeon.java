@@ -47,9 +47,9 @@ package Dungeon;
 */
 public class Dungeon
 {
-	static AttackFactory attackFactory = new AttackFactory();
-	static MonsterFactory monsterFactory = new MonsterFactory(attackFactory);
-	static HeroFactory heroFactory = new HeroFactory(attackFactory);
+	private static AttackFactory attackFactory = new AttackFactory();
+	private static MonsterFactory monsterFactory = new MonsterFactory(attackFactory);
+	private static HeroFactory heroFactory = new HeroFactory(attackFactory);
 
     public static void main(String[] args)
 	{
@@ -73,7 +73,7 @@ chooseHero allows the user to select a hero, creates that hero, and
 returns it.  It utilizes a polymorphic reference (Hero) to accomplish
 this task
 ---------------------------------------------------------------------*/
-	public static Hero chooseHero()
+	private static Hero chooseHero()
 	{
 		int choice;
 		Hero theHero;
@@ -104,7 +104,7 @@ this task
 generateMonster randomly selects a Monster and returns it.  It utilizes
 a polymorphic reference (Monster) to accomplish this task.
 ---------------------------------------------------------------------*/
-	public static Monster generateMonster()
+	private static Monster generateMonster()
 	{
 		return monsterFactory.createMonster();
 	}//end generateMonster method*/
@@ -113,7 +113,7 @@ a polymorphic reference (Monster) to accomplish this task.
 playAgain allows gets choice from user to play another game.  It returns
 true if the user chooses to continue, false otherwise.
 ---------------------------------------------------------------------*/
-	public static boolean playAgain()
+	private static boolean playAgain()
 	{
 		char again;
 
@@ -130,7 +130,7 @@ and a Monster to be passed in.  Battle occurs in rounds.  The Hero
 goes first, then the Monster.  At the conclusion of each round, the
 user has the option of quitting.
 ---------------------------------------------------------------------*/
-	public static void battle(Hero theHero, Monster theMonster)
+	private static void battle(Hero theHero, Monster theMonster)
 	{
 		char pause = 'p';
 		System.out.println(theHero.getName() + " battles " +

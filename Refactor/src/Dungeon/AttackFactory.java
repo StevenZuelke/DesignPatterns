@@ -11,7 +11,7 @@ public class AttackFactory {
          fillMap();
      }
 
-    public void fillMap(){
+    private void fillMap(){
 
         Attacks.put("gremlin", new GremlinAttack());
         Attacks.put("ogre", new OgreAttack());

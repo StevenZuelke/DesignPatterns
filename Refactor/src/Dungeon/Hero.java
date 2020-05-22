@@ -108,6 +108,7 @@ This method is called by: subtractHitPoints()
 ---------------------------------------------------------*/
   public boolean defend()
   {
+
 		return Math.random() <= chanceToBlock;
 
   }//end defend method

@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class MonsterFactory {
 
-    AttackFactory attackFactory;
+    private AttackFactory attackFactory;
 
     public MonsterFactory(AttackFactory attackFactory){
         this.attackFactory = attackFactory;
