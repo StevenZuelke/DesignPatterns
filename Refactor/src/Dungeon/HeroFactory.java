@@ -15,9 +15,6 @@ public class HeroFactory {
         Hero hero;
         heroType = heroType.toUpperCase();
         switch(heroType){
-
-            case "WARRIOR":
-                return new Warrior(attackFactory.getAttack("warrior"));
             case "THIEF":
                 return new Thief(attackFactory.getAttack("thief"));
             case "SORCERESS":
@@ -26,6 +23,8 @@ public class HeroFactory {
                 return new Barbarian(attackFactory.getAttack("barbarian"));
             case "ROGUE":
                 return new Rogue(attackFactory.getAttack("rogue"));
+
+            case "WARRIOR":
             default:
                 return new Warrior(attackFactory.getAttack("warrior"));
 

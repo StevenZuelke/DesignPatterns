@@ -29,7 +29,7 @@ public class Sorceress extends Hero
 	{
 		System.out.println(name + " casts a spell of fireball at " +
 							opponent.getName() + ":");
-		super.attack(opponent);
+		super.attack(opponent, true);
 	}//end override of attack method
 
 //-----------------------------------------------------------------

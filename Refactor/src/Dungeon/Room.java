@@ -12,18 +12,8 @@ public class Room {
     //5: Monster
     //6: Pillar
     private ArrayList<Integer> itemsContained = new ArrayList<Integer>();
-    private Boolean occupied;
-
-    public Room(){
-
-        occupied = false;
-
-    }//end constructor
 
     public void addItem(int itemNum){ itemsContained.add(itemNum); }
- 
-
-    public void clearItems(){ itemsContained = new ArrayList<Integer>(); }
 
     public String itemsToString(){
 
@@ -66,13 +56,5 @@ public class Room {
     }//end itemsToString
 
     public ArrayList<Integer> getItems(){ return itemsContained; }
-
-    public boolean getOccupied(){ return occupied; }
-
-    public void setOccupied(boolean occupied){
-
-        this.occupied = occupied;
-
-    }//end setOccupied
 
 }//end class
