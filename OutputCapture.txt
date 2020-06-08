@@ -1,0 +1,138 @@
+Choose a hero:
+1. Warrior
+2. Sorceress
+3. Thief
+4. Barbarian
+5. Rogue
+1
+Enter character name: Test
+The hero is located in [0] [0]
+***
+*I|
+*-*
+Test:
+HP: 125
+Healing Potions: 0
+Vision Potions: 0
+Pillars of OO found: 0
+Choose what to do:
+1. Move up
+2. Move right
+3. Move down
+4. Move left
+5. Use Healing Potion
+6. Use Vision Potion
+5
+You have no healing potions to use.
+Test:
+HP: 125
+Healing Potions: 0
+Vision Potions: 0
+Pillars of OO found: 0
+Choose what to do:
+1. Move up
+2. Move right
+3. Move down
+4. Move left
+5. Use Healing Potion
+6. Use Vision Potion
+7
+Here is the information about the entire dungeon:
+[0, 0: PLAYER Entrance, ][0, 1: Monster, ][0, 2: Pillar, ][0, 3: Vision Potion, ][0, 4: Monster, ]
+[1, 0: Pit, Vision Potion, ][1, 1: ][1, 2: Pillar, ][1, 3: Pillar, ][1, 4: Monster, ]
+[2, 0: ][2, 1: ][2, 2: Pit, ][2, 3: Pillar, ][2, 4: ]
+[3, 0: Monster, ][3, 1: ][3, 2: Pit, ][3, 3: Monster, ][3, 4: ]
+[4, 0: Pit, ][4, 1: Pit, ][4, 2: Vision Potion, ][4, 3: Healing Potion, Monster, ][4, 4: Exit, ]
+
+Test:
+HP: 125
+Healing Potions: 0
+Vision Potions: 0
+Pillars of OO found: 0
+Choose what to do:
+1. Move up
+2. Move right
+3. Move down
+4. Move left
+5. Use Healing Potion
+6. Use Vision Potion
+2
+Test battles Sargath the Skeleton
+---------------------------------------------
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+Test swings a mighty sword at Sargath the Skeleton:
+Test's attack on Sargath the Skeleton failed!
+
+Sargath the Skeleton slices his rusty blade at Test:
+Test hit  for <32> points damage.
+Test now has 93 hit points remaining.
+
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+Test swings a mighty sword at Sargath the Skeleton:
+Sargath the Skeleton hit  for <58> points damage.
+Sargath the Skeleton now has 0 hit points remaining.
+
+Sargath the Skeleton has been killed :-(
+
+Test was victorious!
+The hero is located in [0] [1]
+***
+|E|
+*-*
+Test:
+HP: 46
+Healing Potions: 0
+Vision Potions: 0
+Pillars of OO found: 0
+Choose what to do:
+1. Move up
+2. Move right
+3. Move down
+4. Move left
+5. Use Healing Potion
+6. Use Vision Potion
+2
+You found a Pillar!
+The hero is located in [0] [2]
+***
+|E|
+*-*
+Test:
+HP: 46
+Healing Potions: 0
+Vision Potions: 0
+Pillars of OO found: 1
+Choose what to do:
+1. Move up
+2. Move right
+3. Move down
+4. Move left
+5. Use Healing Potion
+6. Use Vision Potion
+2
+Found a Vision Potion!
+The hero is located in [0] [3]
+***
+|E|
+*-*
+Test:
+HP: 46
+Healing Potions: 0
+Vision Potions: 1
+Pillars of OO found: 1
+Choose what to do:
+1. Move up
+2. Move right
+3. Move down
+4. Move left
+5. Use Healing Potion
+6. Use Vision Potion
+
+

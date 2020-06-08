@@ -1,0 +1,25 @@
+Sean Zahller:
+
+Created 2 Monster classes and 2 Hero Classes. 
+Created Special Attack classes for all 10 DungeonCharacters
+Created Tests for the special attacks.
+
+Samuel Urcino:
+
+Created NewDungeon class 
+	added heroLocation
+	added hero member to the class
+Created Tests for the attack and monster factories
+
+Steven Zuelke:
+
+Created Hero/Monster Factories
+Modified and reorganized Dungeoncharacter heirarchy
+Created AttackFactory using flyweight pattern for all specialAttacks
+Created Room and completed Room class
+Completed NewDungeon class
+Created and completed DungeonAdventure class
+Created UML Diagram
+Created Tests for room class
+Created tests for NewDungeon class
+Created tests for the attackfactory class in flyweighttests.

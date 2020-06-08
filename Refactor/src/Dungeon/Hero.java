@@ -66,7 +66,6 @@ public abstract class Hero extends DungeonCharacter
 	this.numVisionPots = 0;
 	this.numPillars = 0;
 	this.location = new Point2D(0,0);
-	readName();
   }
 
   //toString method that returns everything in project specs
@@ -106,11 +105,9 @@ Returns: nothing
 This method calls: nothing
 This method is called by: hero constructor
 ---------------------------------------------------------*/
-  public void readName()
-  {
-		System.out.print("Enter character name: ");
-		name = Keyboard.readString();
-  }//end readName method
+  public void setName(String name){
+  	this.name = name;
+  }
 
 /*-------------------------------------------------------
 defend determines if hero blocks attack

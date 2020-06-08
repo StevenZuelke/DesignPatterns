@@ -18,6 +18,7 @@ public class DungeonAdventure {
         do
         {
             Hero theHero = chooseHero();
+            theHero.setName(readName());
             dungeon = new NewDungeon(theHero);
             playGame();
             System.out.println(dungeon.toString());
@@ -200,7 +201,7 @@ public class DungeonAdventure {
 
                     if(!(x < 0) && !(y < 0) && !(x >= dungeon.getRooms().length - 1) && !(y >= dungeon.getRooms()[0].length - 1)){
 
-                        dungeon.printRoom(x,y);
+                        dungeon.printRoom(i,j);
 
                     }//end if room exists
 
@@ -245,6 +246,11 @@ public class DungeonAdventure {
         }//end switch
 
     }//end chooseHero method
+
+    private static String readName(){
+        System.out.print("Enter character name: ");
+        return Keyboard.readString();
+    }//end readName
 
     private static boolean playAgain()
     {
