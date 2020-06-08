@@ -1,107 +1,111 @@
 package Dungeon;
 
-
-import org.junit.Rule;
 import org.junit.jupiter.api.Test;
-import org.junit.rules.ExpectedException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-
 public class SpecialAttackTests {
 
-    @Rule
-    public final ExpectedException exception = ExpectedException.none();
-
-    @Test
+@Test
     public void BarbarianAttack(){
-    //First Method of J Unit test
-        BarbarianAttack underTest = new BarbarianAttack();
-        assertEquals(underTest, underTest);
+        Attack BarbAttack = new BarbarianAttack();
+        Barbarian attacker = new Barbarian(BarbAttack);
+        Attack DragAttack = new DragonAttack();
+        DungeonCharacter opponent = new Dragon(DragAttack);
 
-
+        BarbAttack.attack(attacker, opponent);
     }//end Barbarian
 
     @Test
     public void DragonAttack(){
-    //Second method of J Unit test
-        DragonAttack underTest = new DragonAttack();
-        exception.expect(RuntimeException.class);
+        Attack DragAttack = new DragonAttack();
+        DungeonCharacter attacker = new Dragon(DragAttack);
+        Attack BarbAttack = new BarbarianAttack();
+        Barbarian opponent = new Barbarian(BarbAttack);
 
-
+        DragAttack.attack(attacker, opponent);
     }//end Dragon
 
 
     @Test
     public void GoblinAttack(){
+        Attack GobAttack = new GoblinAttack();
+        DungeonCharacter attacker = new Goblin(GobAttack);
+        Attack BarbAttack = new BarbarianAttack();
+        Barbarian opponent = new Barbarian(BarbAttack);
 
-        GoblinAttack underTest = new GoblinAttack();
-        assertEquals(underTest, underTest);
-
+        GobAttack.attack(attacker, opponent);
 
     }//end Goblin
 
     @Test
     public void GremlinAttack(){
+        Attack GremAttack = new GremlinAttack();
+        DungeonCharacter attacker = new Gremlin(GremAttack);
+        Attack BarbAttack = new BarbarianAttack();
+        Barbarian opponent = new Barbarian(BarbAttack);
 
-        GremlinAttack underTest = new GremlinAttack();
-        assertEquals(underTest, underTest);
-
-
+        GremAttack.attack(attacker, opponent);
     }//end Gremlin
 
     @Test
     public void OgreAttack(){
+        Attack OgreAttack = new OgreAttack();
+        DungeonCharacter attacker = new Ogre(OgreAttack);
+        Attack BarbAttack = new BarbarianAttack();
+        Barbarian opponent = new Barbarian(BarbAttack);
 
-        DragonAttack underTest = new DragonAttack();
-        assertEquals(underTest, underTest);
-
+        OgreAttack.attack(attacker, opponent);
     }//end Ogre
 
     @Test
     public void RogueAttack(){
+        Attack RogueAttack = new RogueAttack();
+        DungeonCharacter attacker = new Rogue(RogueAttack);
+        Attack GremlinAttack = new GremlinAttack();
+        Gremlin opponent = new Gremlin(GremlinAttack);
 
-        RogueAttack underTest = new RogueAttack();
-        assertEquals(underTest, underTest);
-
-
+        RogueAttack.attack(attacker, opponent);
     }//end Rogue
 
     @Test
     public void SkeletonAttack(){
+        Attack SkelAttack = new SkeletonAttack();
+        DungeonCharacter attacker = new Skeleton(SkelAttack);
+        Attack BarbAttack = new BarbarianAttack();
+        Barbarian opponent = new Barbarian(BarbAttack);
 
-        SkeletonAttack underTest = new SkeletonAttack();
-        assertEquals(underTest, underTest);
-
-
+        SkelAttack.attack(attacker, opponent);
     }//end Skeleton
 
     @Test
     public void SorceressAttack(){
+        Attack SorcAttack = new SorceressAttack();
+        DungeonCharacter attacker = new Sorceress(SorcAttack);
+        Attack GremlinAttack = new GremlinAttack();
+        Gremlin opponent = new Gremlin(GremlinAttack);
 
-        SorceressAttack underTest = new SorceressAttack();
-        assertEquals(underTest, underTest);
-
-
+        SorcAttack.attack(attacker, opponent);
     }//end Sorceress
 
     @Test
     public void ThiefAttack(){
+        Attack ThiefAttack = new ThiefAttack();
+        DungeonCharacter attacker = new Thief(ThiefAttack);
+        Attack GremlinAttack = new GremlinAttack();
+        Gremlin opponent = new Gremlin(GremlinAttack);
 
-        ThiefAttack underTest = new ThiefAttack();
-        assertEquals(underTest, underTest);
-
-
+        ThiefAttack.attack(attacker, opponent);
     }//end Thief
 
     @Test
     public void WarriorAttack(){
+        Attack WarAttack = new WarriorAttack();
+        DungeonCharacter attacker = new Warrior(WarAttack);
+        Attack GremlinAttack = new GremlinAttack();
+        Gremlin opponent = new Gremlin(GremlinAttack);
 
-        WarriorAttack underTest = new WarriorAttack();
-        assertEquals(underTest, underTest);
-
-
+        WarAttack.attack(attacker, opponent);
     }//end Warrior
-
 }//end class
